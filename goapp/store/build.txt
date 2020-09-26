@@ -1,0 +1,239 @@
+WORK=/tmp/go-build728737384
+mkdir -p $WORK/sync/_obj/
+mkdir -p $WORK/
+cd /home/dushyantmistry/Projects/go/src/pkg/sync
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/sync.a -trimpath $WORK -p sync -D _/home/dushyantmistry/Projects/go/src/pkg/sync -I $WORK -pack ./cond.go ./mutex.go ./once.go ./pool.go ./race0.go ./runtime.go ./rwmutex.go ./waitgroup.go
+mkdir -p $WORK/unicode/utf8/_obj/
+mkdir -p $WORK/unicode/
+cd /home/dushyantmistry/Projects/go/src/pkg/unicode/utf8
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/unicode/utf8.a -trimpath $WORK -p unicode/utf8 -complete -D _/home/dushyantmistry/Projects/go/src/pkg/unicode/utf8 -I $WORK -pack ./utf8.go
+mkdir -p $WORK/strconv/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/strconv
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/strconv.a -trimpath $WORK -p strconv -complete -D _/home/dushyantmistry/Projects/go/src/pkg/strconv -I $WORK -pack ./atob.go ./atof.go ./atoi.go ./decimal.go ./extfloat.go ./ftoa.go ./isprint.go ./itoa.go ./quote.go
+mkdir -p $WORK/io/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/io
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/io.a -trimpath $WORK -p io -complete -D _/home/dushyantmistry/Projects/go/src/pkg/io -I $WORK -pack ./io.go ./multi.go ./pipe.go
+mkdir -p $WORK/syscall/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/syscall
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/syscall.a -trimpath $WORK -p syscall -D _/home/dushyantmistry/Projects/go/src/pkg/syscall -I $WORK -pack ./env_unix.go ./exec_linux.go ./exec_unix.go ./flock.go ./flock_linux_32bit.go ./lsf_linux.go ./netlink_linux.go ./race0.go ./sockcmsg_linux.go ./sockcmsg_unix.go ./str.go ./syscall.go ./syscall_linux.go ./syscall_linux_386.go ./syscall_unix.go ./zerrors_linux_386.go ./zsyscall_linux_386.go ./zsysnum_linux_386.go ./ztypes_linux_386.go
+mkdir -p $WORK/math/rand/_obj/
+mkdir -p $WORK/math/
+cd /home/dushyantmistry/Projects/go/src/pkg/math/rand
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/math/rand.a -trimpath $WORK -p math/rand -complete -D _/home/dushyantmistry/Projects/go/src/pkg/math/rand -I $WORK -pack ./exp.go ./normal.go ./rand.go ./rng.go ./zipf.go
+mkdir -p $WORK/bytes/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/bytes
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/bytes.a -trimpath $WORK -p bytes -D _/home/dushyantmistry/Projects/go/src/pkg/bytes -I $WORK -pack ./buffer.go ./bytes.go ./bytes_decl.go ./reader.go
+mkdir -p $WORK/strings/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/strings
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/strings.a -trimpath $WORK -p strings -D _/home/dushyantmistry/Projects/go/src/pkg/strings -I $WORK -pack ./reader.go ./replace.go ./search.go ./strings.go ./strings_decl.go
+cd /home/dushyantmistry/Projects/go/src/pkg/bytes
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8a -trimpath $WORK -I $WORK/bytes/_obj/ -o $WORK/bytes/_obj/bytes.8 -D GOOS_linux -D GOARCH_386 ./bytes.s
+pack r $WORK/bytes.a $WORK/bytes/_obj/bytes.8 # internal
+mkdir -p $WORK/bufio/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/bufio
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/bufio.a -trimpath $WORK -p bufio -complete -D _/home/dushyantmistry/Projects/go/src/pkg/bufio -I $WORK -pack ./bufio.go ./scan.go
+mkdir -p $WORK/reflect/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/reflect
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/reflect.a -trimpath $WORK -p reflect -D _/home/dushyantmistry/Projects/go/src/pkg/reflect -I $WORK -pack ./deepequal.go ./makefunc.go ./type.go ./value.go
+mkdir -p $WORK/crypto/cipher/_obj/
+mkdir -p $WORK/crypto/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/cipher
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/cipher.a -trimpath $WORK -p crypto/cipher -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/cipher -I $WORK -pack ./cbc.go ./cfb.go ./cipher.go ./ctr.go ./gcm.go ./io.go ./ofb.go ./xor.go
+cd /home/dushyantmistry/Projects/go/src/pkg/strings
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8a -trimpath $WORK -I $WORK/strings/_obj/ -o $WORK/strings/_obj/strings.8 -D GOOS_linux -D GOARCH_386 ./strings.s
+pack r $WORK/strings.a $WORK/strings/_obj/strings.8 # internal
+mkdir -p $WORK/hash/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/hash
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/hash.a -trimpath $WORK -p hash -complete -D _/home/dushyantmistry/Projects/go/src/pkg/hash -I $WORK -pack ./hash.go
+mkdir -p $WORK/crypto/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto.a -trimpath $WORK -p crypto -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto -I $WORK -pack ./crypto.go
+mkdir -p $WORK/crypto/md5/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/md5
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/md5.a -trimpath $WORK -p crypto/md5 -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/md5 -I $WORK -pack ./md5.go ./md5block.go ./md5block_decl.go
+cd /home/dushyantmistry/Projects/go/src/pkg/syscall
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8a -trimpath $WORK -I $WORK/syscall/_obj/ -o $WORK/syscall/_obj/asm_linux_386.8 -D GOOS_linux -D GOARCH_386 ./asm_linux_386.s
+pack r $WORK/syscall.a $WORK/syscall/_obj/asm_linux_386.8 # internal
+mkdir -p $WORK/time/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/time
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/time.a -trimpath $WORK -p time -D _/home/dushyantmistry/Projects/go/src/pkg/time -I $WORK -pack ./format.go ./sleep.go ./sys_unix.go ./tick.go ./time.go ./zoneinfo.go ./zoneinfo_read.go ./zoneinfo_unix.go
+mkdir -p $WORK/crypto/aes/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/aes
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/aes.a -trimpath $WORK -p crypto/aes -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/aes -I $WORK -pack ./block.go ./cipher.go ./cipher_generic.go ./const.go
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/md5
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8a -trimpath $WORK -I $WORK/crypto/md5/_obj/ -o $WORK/crypto/md5/_obj/md5block_386.8 -D GOOS_linux -D GOARCH_386 ./md5block_386.s
+pack r $WORK/crypto/md5.a $WORK/crypto/md5/_obj/md5block_386.8 # internal
+mkdir -p $WORK/hash/crc32/_obj/
+mkdir -p $WORK/hash/
+cd /home/dushyantmistry/Projects/go/src/pkg/hash/crc32
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/hash/crc32.a -trimpath $WORK -p hash/crc32 -complete -D _/home/dushyantmistry/Projects/go/src/pkg/hash/crc32 -I $WORK -pack ./crc32.go ./crc32_generic.go
+mkdir -p $WORK/crypto/hmac/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/hmac
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/hmac.a -trimpath $WORK -p crypto/hmac -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/hmac -I $WORK -pack ./hmac.go
+mkdir -p $WORK/crypto/rc4/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/rc4
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/rc4.a -trimpath $WORK -p crypto/rc4 -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/rc4 -I $WORK -pack ./rc4.go ./rc4_asm.go
+mkdir -p $WORK/crypto/sha1/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/sha1
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/sha1.a -trimpath $WORK -p crypto/sha1 -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/sha1 -I $WORK -pack ./sha1.go ./sha1block.go ./sha1block_decl.go
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/rc4
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8a -trimpath $WORK -I $WORK/crypto/rc4/_obj/ -o $WORK/crypto/rc4/_obj/rc4_386.8 -D GOOS_linux -D GOARCH_386 ./rc4_386.s
+pack r $WORK/crypto/rc4.a $WORK/crypto/rc4/_obj/rc4_386.8 # internal
+mkdir -p $WORK/crypto/sha256/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/sha256
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/sha256.a -trimpath $WORK -p crypto/sha256 -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/sha256 -I $WORK -pack ./sha256.go ./sha256block_decl.go
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/sha1
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8a -trimpath $WORK -I $WORK/crypto/sha1/_obj/ -o $WORK/crypto/sha1/_obj/sha1block_386.8 -D GOOS_linux -D GOARCH_386 ./sha1block_386.s
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/sha256
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8a -trimpath $WORK -I $WORK/crypto/sha256/_obj/ -o $WORK/crypto/sha256/_obj/sha256block_386.8 -D GOOS_linux -D GOARCH_386 ./sha256block_386.s
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/sha1
+pack r $WORK/crypto/sha1.a $WORK/crypto/sha1/_obj/sha1block_386.8 # internal
+mkdir -p $WORK/crypto/sha512/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/sha512
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/sha512.a -trimpath $WORK -p crypto/sha512 -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/sha512 -I $WORK -pack ./sha512.go ./sha512block.go
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/sha256
+pack r $WORK/crypto/sha256.a $WORK/crypto/sha256/_obj/sha256block_386.8 # internal
+mkdir -p $WORK/encoding/base64/_obj/
+mkdir -p $WORK/encoding/
+cd /home/dushyantmistry/Projects/go/src/pkg/encoding/base64
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/encoding/base64.a -trimpath $WORK -p encoding/base64 -complete -D _/home/dushyantmistry/Projects/go/src/pkg/encoding/base64 -I $WORK -pack ./base64.go
+mkdir -p $WORK/net/url/_obj/
+mkdir -p $WORK/net/
+cd /home/dushyantmistry/Projects/go/src/pkg/net/url
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/net/url.a -trimpath $WORK -p net/url -complete -D _/home/dushyantmistry/Projects/go/src/pkg/net/url -I $WORK -pack ./url.go
+mkdir -p $WORK/encoding/pem/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/encoding/pem
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/encoding/pem.a -trimpath $WORK -p encoding/pem -complete -D _/home/dushyantmistry/Projects/go/src/pkg/encoding/pem -I $WORK -pack ./pem.go
+mkdir -p $WORK/path/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/path
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/path.a -trimpath $WORK -p path -complete -D _/home/dushyantmistry/Projects/go/src/pkg/path -I $WORK -pack ./match.go ./path.go
+cd /home/dushyantmistry/Projects/go/src/pkg/reflect
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8a -trimpath $WORK -I $WORK/reflect/_obj/ -o $WORK/reflect/_obj/asm_386.8 -D GOOS_linux -D GOARCH_386 ./asm_386.s
+pack r $WORK/reflect.a $WORK/reflect/_obj/asm_386.8 # internal
+mkdir -p $WORK/encoding/binary/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/encoding/binary
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/encoding/binary.a -trimpath $WORK -p encoding/binary -complete -D _/home/dushyantmistry/Projects/go/src/pkg/encoding/binary -I $WORK -pack ./binary.go ./varint.go
+mkdir -p $WORK/os/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/os
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/os.a -trimpath $WORK -p os -D _/home/dushyantmistry/Projects/go/src/pkg/os -I $WORK -pack ./dir_unix.go ./doc.go ./env.go ./error.go ./error_unix.go ./exec.go ./exec_posix.go ./exec_unix.go ./file.go ./file_posix.go ./file_unix.go ./getwd.go ./path.go ./path_unix.go ./pipe_linux.go ./proc.go ./stat_linux.go ./sys_linux.go ./sys_unix.go ./types.go ./types_notwin.go
+mkdir -p $WORK/crypto/des/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/des
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/des.a -trimpath $WORK -p crypto/des -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/des -I $WORK -pack ./block.go ./cipher.go ./const.go
+mkdir -p $WORK/fmt/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/fmt
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/fmt.a -trimpath $WORK -p fmt -complete -D _/home/dushyantmistry/Projects/go/src/pkg/fmt -I $WORK -pack ./doc.go ./format.go ./print.go ./scan.go
+mkdir -p $WORK/path/filepath/_obj/
+mkdir -p $WORK/path/
+cd /home/dushyantmistry/Projects/go/src/pkg/path/filepath
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/path/filepath.a -trimpath $WORK -p path/filepath -complete -D _/home/dushyantmistry/Projects/go/src/pkg/path/filepath -I $WORK -pack ./match.go ./path.go ./path_unix.go ./symlink.go
+mkdir -p $WORK/io/ioutil/_obj/
+mkdir -p $WORK/io/
+cd /home/dushyantmistry/Projects/go/src/pkg/io/ioutil
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/io/ioutil.a -trimpath $WORK -p io/ioutil -complete -D _/home/dushyantmistry/Projects/go/src/pkg/io/ioutil -I $WORK -pack ./ioutil.go ./tempfile.go
+mkdir -p $WORK/flag/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/flag
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/flag.a -trimpath $WORK -p flag -complete -D _/home/dushyantmistry/Projects/go/src/pkg/flag -I $WORK -pack ./flag.go
+mkdir -p $WORK/log/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/log
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/log.a -trimpath $WORK -p log -complete -D _/home/dushyantmistry/Projects/go/src/pkg/log -I $WORK -pack ./log.go
+mkdir -p $WORK/math/big/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/math/big
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/math/big.a -trimpath $WORK -p math/big -D _/home/dushyantmistry/Projects/go/src/pkg/math/big -I $WORK -pack ./arith.go ./arith_decl.go ./int.go ./nat.go ./rat.go
+mkdir -p $WORK/mime/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/mime
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/mime.a -trimpath $WORK -p mime -complete -D _/home/dushyantmistry/Projects/go/src/pkg/mime -I $WORK -pack ./grammar.go ./mediatype.go ./type.go ./type_unix.go
+mkdir -p $WORK/compress/flate/_obj/
+mkdir -p $WORK/compress/
+cd /home/dushyantmistry/Projects/go/src/pkg/compress/flate
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/compress/flate.a -trimpath $WORK -p compress/flate -complete -D _/home/dushyantmistry/Projects/go/src/pkg/compress/flate -I $WORK -pack ./copy.go ./deflate.go ./fixedhuff.go ./huffman_bit_writer.go ./huffman_code.go ./inflate.go ./reverse_bits.go ./token.go
+mkdir -p $WORK/encoding/hex/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/encoding/hex
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/encoding/hex.a -trimpath $WORK -p encoding/hex -complete -D _/home/dushyantmistry/Projects/go/src/pkg/encoding/hex -I $WORK -pack ./hex.go
+mkdir -p $WORK/net/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/net
+CGO_LDFLAGS="-g" "-O2" /home/dushyantmistry/Projects/go/pkg/tool/linux_386/cgo -objdir $WORK/net/_obj/ -- -I $WORK/net/_obj/ cgo_linux.go cgo_unix.go
+mkdir -p $WORK/os/user/_obj/
+mkdir -p $WORK/os/
+cd /home/dushyantmistry/Projects/go/src/pkg/os/user
+CGO_LDFLAGS="-g" "-O2" /home/dushyantmistry/Projects/go/pkg/tool/linux_386/cgo -objdir $WORK/os/user/_obj/ -- -I $WORK/os/user/_obj/ lookup_unix.go
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8c -F -V -w -trimpath $WORK -I $WORK/os/user/_obj/ -I /home/dushyantmistry/Projects/go/pkg/linux_386 -o $WORK/os/user/_obj/_cgo_defun.8 -D GOOS_linux -D GOARCH_386 $WORK/os/user/_obj/_cgo_defun.c
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -print-libgcc-file-name
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -I $WORK/os/user/_obj/ -g -O2 -o $WORK/os/user/_obj/_cgo_main.o -c $WORK/os/user/_obj/_cgo_main.c
+mkdir -p $WORK/compress/gzip/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/compress/gzip
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/compress/gzip.a -trimpath $WORK -p compress/gzip -complete -D _/home/dushyantmistry/Projects/go/src/pkg/compress/gzip -I $WORK -pack ./gunzip.go ./gzip.go
+cd /home/dushyantmistry/Projects/go/src/pkg/os/user
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -I $WORK/os/user/_obj/ -g -O2 -o $WORK/os/user/_obj/_cgo_export.o -c $WORK/os/user/_obj/_cgo_export.c
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -I $WORK/os/user/_obj/ -g -O2 -o $WORK/os/user/_obj/lookup_unix.cgo2.o -c $WORK/os/user/_obj/lookup_unix.cgo2.c
+cd /home/dushyantmistry/Projects/go/src/pkg/math/big
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8a -trimpath $WORK -I $WORK/math/big/_obj/ -o $WORK/math/big/_obj/arith_386.8 -D GOOS_linux -D GOARCH_386 ./arith_386.s
+pack r $WORK/math/big.a $WORK/math/big/_obj/arith_386.8 # internal
+mkdir -p $WORK/crypto/rand/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/rand
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/rand.a -trimpath $WORK -p crypto/rand -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/rand -I $WORK -pack ./rand.go ./rand_unix.go ./util.go
+mkdir -p $WORK/crypto/elliptic/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/elliptic
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/elliptic.a -trimpath $WORK -p crypto/elliptic -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/elliptic -I $WORK -pack ./elliptic.go ./p224.go ./p256.go
+cd /home/dushyantmistry/Projects/go/src/pkg/net
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8c -F -V -w -trimpath $WORK -I $WORK/net/_obj/ -I /home/dushyantmistry/Projects/go/pkg/linux_386 -o $WORK/net/_obj/_cgo_defun.8 -D GOOS_linux -D GOARCH_386 $WORK/net/_obj/_cgo_defun.c
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -I $WORK/net/_obj/ -g -O2 -o $WORK/net/_obj/_cgo_main.o -c $WORK/net/_obj/_cgo_main.c
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -I $WORK/net/_obj/ -g -O2 -o $WORK/net/_obj/_cgo_export.o -c $WORK/net/_obj/_cgo_export.c
+mkdir -p $WORK/crypto/rsa/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/rsa
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/rsa.a -trimpath $WORK -p crypto/rsa -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/rsa -I $WORK -pack ./pkcs1v15.go ./pss.go ./rsa.go
+cd /home/dushyantmistry/Projects/go/src/pkg/os/user
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -o $WORK/os/user/_obj/_cgo_.o $WORK/os/user/_obj/_cgo_main.o $WORK/os/user/_obj/_cgo_export.o $WORK/os/user/_obj/lookup_unix.cgo2.o -g -O2
+cd /home/dushyantmistry/Projects/go/src/pkg/net
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -I $WORK/net/_obj/ -g -O2 -o $WORK/net/_obj/cgo_linux.cgo2.o -c $WORK/net/_obj/cgo_linux.cgo2.c
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -I $WORK/net/_obj/ -g -O2 -o $WORK/net/_obj/cgo_unix.cgo2.o -c $WORK/net/_obj/cgo_unix.cgo2.c
+cd /home/dushyantmistry/Projects/go/src/pkg/os/user
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/cgo -objdir $WORK/os/user/_obj/ -dynimport $WORK/os/user/_obj/_cgo_.o -dynout $WORK/os/user/_obj/_cgo_import.c
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8c -F -V -w -trimpath $WORK -I $WORK/os/user/_obj/ -I /home/dushyantmistry/Projects/go/pkg/linux_386 -o $WORK/os/user/_obj/_cgo_import.8 -D GOOS_linux -D GOARCH_386 $WORK/os/user/_obj/_cgo_import.c
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -o $WORK/os/user/_obj/_all.o $WORK/os/user/_obj/_cgo_export.o $WORK/os/user/_obj/lookup_unix.cgo2.o -g -O2 -Wl,-r -nostdlib /usr/lib/gcc/i686-redhat-linux/4.4.7/libgcc.a
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/os/user.a -trimpath $WORK -p os/user -D _/home/dushyantmistry/Projects/go/src/pkg/os/user -I $WORK -pack ./lookup.go ./user.go $WORK/os/user/_obj/_cgo_gotypes.go $WORK/os/user/_obj/lookup_unix.cgo1.go
+mkdir -p $WORK/crypto/dsa/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/dsa
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/dsa.a -trimpath $WORK -p crypto/dsa -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/dsa -I $WORK -pack ./dsa.go
+mkdir -p $WORK/encoding/asn1/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/encoding/asn1
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/encoding/asn1.a -trimpath $WORK -p encoding/asn1 -complete -D _/home/dushyantmistry/Projects/go/src/pkg/encoding/asn1 -I $WORK -pack ./asn1.go ./common.go ./marshal.go
+cd /home/dushyantmistry/Projects/go/src/pkg/os/user
+pack r $WORK/os/user.a $WORK/os/user/_obj/_cgo_import.8 $WORK/os/user/_obj/_cgo_defun.8 $WORK/os/user/_obj/_all.o # internal
+cd /home/dushyantmistry/Projects/go/src/pkg/net
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -I $WORK/net/_obj/ -g -O2 -o $WORK/net/_obj/empty.o -c ./empty.c
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -o $WORK/net/_obj/_cgo_.o $WORK/net/_obj/_cgo_main.o $WORK/net/_obj/_cgo_export.o $WORK/net/_obj/cgo_linux.cgo2.o $WORK/net/_obj/cgo_unix.cgo2.o $WORK/net/_obj/empty.o -g -O2
+mkdir -p $WORK/crypto/ecdsa/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/ecdsa
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/ecdsa.a -trimpath $WORK -p crypto/ecdsa -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/ecdsa -I $WORK -pack ./ecdsa.go
+cd /home/dushyantmistry/Projects/go/src/pkg/net
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/cgo -objdir $WORK/net/_obj/ -dynimport $WORK/net/_obj/_cgo_.o -dynout $WORK/net/_obj/_cgo_import.c
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8c -F -V -w -trimpath $WORK -I $WORK/net/_obj/ -I /home/dushyantmistry/Projects/go/pkg/linux_386 -o $WORK/net/_obj/_cgo_import.8 -D GOOS_linux -D GOARCH_386 $WORK/net/_obj/_cgo_import.c
+gcc -I . -fPIC -m32 -pthread -fmessage-length=0 -o $WORK/net/_obj/_all.o $WORK/net/_obj/_cgo_export.o $WORK/net/_obj/cgo_linux.cgo2.o $WORK/net/_obj/cgo_unix.cgo2.o $WORK/net/_obj/empty.o -g -O2 -Wl,-r -nostdlib /usr/lib/gcc/i686-redhat-linux/4.4.7/libgcc.a
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/net.a -trimpath $WORK -p net -D _/home/dushyantmistry/Projects/go/src/pkg/net -I $WORK -pack ./dial.go ./dnsclient.go ./dnsclient_unix.go ./dnsconfig_unix.go ./dnsmsg.go ./fd_mutex.go ./fd_poll_runtime.go ./fd_unix.go ./file_unix.go ./hosts.go ./interface.go ./interface_linux.go ./ip.go ./iprawsock.go ./iprawsock_posix.go ./ipsock.go ./ipsock_posix.go ./lookup.go ./lookup_unix.go ./mac.go ./net.go ./parse.go ./pipe.go ./port.go ./port_unix.go ./sendfile_linux.go ./singleflight.go ./sock_cloexec.go ./sock_linux.go ./sock_posix.go ./sockopt_linux.go ./sockopt_posix.go ./sockoptip_linux.go ./sockoptip_posix.go ./tcpsock.go ./tcpsock_posix.go ./tcpsockopt_posix.go ./tcpsockopt_unix.go ./udpsock.go ./udpsock_posix.go ./unixsock.go ./unixsock_posix.go $WORK/net/_obj/_cgo_gotypes.go $WORK/net/_obj/cgo_linux.cgo1.go $WORK/net/_obj/cgo_unix.cgo1.go
+mkdir -p $WORK/crypto/x509/pkix/_obj/
+mkdir -p $WORK/crypto/x509/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/x509/pkix
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/x509/pkix.a -trimpath $WORK -p crypto/x509/pkix -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/x509/pkix -I $WORK -pack ./pkix.go
+cd /home/dushyantmistry/Projects/go/src/pkg/net
+pack r $WORK/net.a $WORK/net/_obj/_cgo_import.8 $WORK/net/_obj/_cgo_defun.8 $WORK/net/_obj/_all.o # internal
+mkdir -p $WORK/net/textproto/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/net/textproto
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/net/textproto.a -trimpath $WORK -p net/textproto -complete -D _/home/dushyantmistry/Projects/go/src/pkg/net/textproto -I $WORK -pack ./header.go ./pipeline.go ./reader.go ./textproto.go ./writer.go
+mkdir -p $WORK/crypto/x509/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/x509
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/x509.a -trimpath $WORK -p crypto/x509 -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/x509 -I $WORK -pack ./cert_pool.go ./pem_decrypt.go ./pkcs1.go ./pkcs8.go ./root.go ./root_unix.go ./sec1.go ./verify.go ./x509.go
+mkdir -p $WORK/mime/multipart/_obj/
+mkdir -p $WORK/mime/
+cd /home/dushyantmistry/Projects/go/src/pkg/mime/multipart
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/mime/multipart.a -trimpath $WORK -p mime/multipart -complete -D _/home/dushyantmistry/Projects/go/src/pkg/mime/multipart -I $WORK -pack ./formdata.go ./multipart.go ./quotedprintable.go ./writer.go
+mkdir -p $WORK/crypto/tls/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/crypto/tls
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/crypto/tls.a -trimpath $WORK -p crypto/tls -complete -D _/home/dushyantmistry/Projects/go/src/pkg/crypto/tls -I $WORK -pack ./alert.go ./cipher_suites.go ./common.go ./conn.go ./handshake_client.go ./handshake_messages.go ./handshake_server.go ./key_agreement.go ./prf.go ./ticket.go ./tls.go
+mkdir -p $WORK/net/http/_obj/
+cd /home/dushyantmistry/Projects/go/src/pkg/net/http
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/net/http.a -trimpath $WORK -p net/http -complete -D _/home/dushyantmistry/Projects/go/src/pkg/net/http -I $WORK -pack ./chunked.go ./client.go ./cookie.go ./doc.go ./filetransport.go ./fs.go ./header.go ./jar.go ./lex.go ./request.go ./response.go ./server.go ./sniff.go ./status.go ./transfer.go ./transport.go
+mkdir -p $WORK/command-line-arguments/_obj/
+cd /home/dushyantmistry/Projects/goprograms/goapp/store
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8g -o $WORK/command-line-arguments.a -trimpath $WORK -p command-line-arguments -complete -D _/home/dushyantmistry/Projects/goprograms/goapp/store -I $WORK -pack ./stored.go
+cd .
+/home/dushyantmistry/Projects/go/pkg/tool/linux_386/8l -o stored -L $WORK -extld=gcc $WORK/command-line-arguments.a
